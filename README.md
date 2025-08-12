@@ -1,11 +1,10 @@
-# <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
 
-  <!-- AOS Animation Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
@@ -15,6 +14,8 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
     }
     nav {
       display: flex;
@@ -60,6 +61,7 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       overflow: hidden;
       transition: transform 0.3s;
+      padding-bottom: 10px;
     }
     .project-card:hover { transform: scale(1.05); }
     .project-card img { width: 100%; height: 200px; object-fit: cover; }
@@ -92,7 +94,6 @@
 </head>
 <body>
 
-<!-- Navbar -->
 <header>
   <nav>
     <h1 class="logo">Your Name</h1>
@@ -105,32 +106,29 @@
   </nav>
 </header>
 
-<!-- Hero Section -->
 <section id="home" class="hero" data-aos="fade-up">
   <h2>Hi, I'm <span>Your Name</span></h2>
   <p>Web Designer | Developer | Learner</p>
-  <a href="resume.pdf" download class="btn">Download Resume</a>
+  <a href="#" class="btn">Download Resume</a>
 </section>
 
-<!-- About Section -->
 <section id="about" data-aos="fade-right">
   <h2>About Me</h2>
   <p>Hello! I'm a passionate web designer who loves creating clean and responsive websites. 
      I enjoy learning new technologies and bringing creative ideas to life through code.</p>
 </section>
 
-<!-- Projects Section -->
 <section id="projects" data-aos="zoom-in">
   <h2>My Projects</h2>
   <div class="project-grid">
     <div class="project-card">
-      <img src="images/project1.jpg" alt="Project 1">
+      <img src="https://via.placeholder.com/400x200" alt="Project 1">
       <h3>Project One</h3>
       <p>Short description of the project.</p>
       <a href="#">View Project</a>
     </div>
     <div class="project-card">
-      <img src="images/project2.jpg" alt="Project 2">
+      <img src="https://via.placeholder.com/400x200" alt="Project 2">
       <h3>Project Two</h3>
       <p>Short description of the project.</p>
       <a href="#">View Project</a>
@@ -138,13 +136,12 @@
   </div>
 </section>
 
-<!-- Contact Section -->
 <section id="contact" data-aos="fade-up">
   <h2>Contact Me</h2>
   <form>
     <input type="text" placeholder="Your Name" required>
     <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message"></textarea>
+    <textarea placeholder="Your Message" required></textarea>
     <button type="submit">Send</button>
   </form>
 </section>
@@ -153,8 +150,7 @@
   <p>© 2025 Your Name. All Rights Reserved.</p>
 </footer>
 
-<!-- JS -->
-<script src="script.js"></script>
+<!-- Inline JS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
